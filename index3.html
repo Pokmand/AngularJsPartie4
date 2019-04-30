@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice3&4JS4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <script src="script2.js"></script>
+</head>
+
+<!-- <body ng-app = "carapp" ng-controller ="carcontrl">
+<ul>
+  <li ng-repeat = "x in mydata | filter :'verte'">
+    {{x.marque + "," + x.couleur}}
+  </li>
+</ul>
+</body> -->
+
+<body ng-app = "carapp" ng-controller ="carcontrl">
+<ul>
+  <li ng-repeat = "x in mydata | filter :'!verte'">
+    {{x.marque + "," + x.couleur}}
+  </li>
+</ul>
+</body>
+
+</html>
